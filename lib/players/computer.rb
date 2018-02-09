@@ -15,11 +15,11 @@ module Players
       
       pick_order = ["5","1","3","7","9","2", "4", "6", "8"]
       #binding.pry
-      while @counter < @pick_order.length
-        val = @pick_order[@counter]
-        @counter += 1
-        val
-      end
+      # while @counter < @pick_order.length
+      #   val = @pick_order[@counter]
+      #   @counter += 1
+      #   val
+      # end
       
     if board.valid_move?("5")
       return "5"
