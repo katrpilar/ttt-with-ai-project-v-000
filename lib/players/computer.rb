@@ -18,9 +18,9 @@ module Players
       while board.full? == false 
         firstpick = pick_order.first
         if board.valid_move?(firstpick)
+          pick_order.delete(firstpick)
           return firstpick
         end
-        firstpick.shift
       end
     
 
