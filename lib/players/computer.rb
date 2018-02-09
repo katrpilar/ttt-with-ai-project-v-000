@@ -20,6 +20,8 @@ module Players
         if board.valid_move?(firstpick)
           pick_order.delete(firstpick)
           return firstpick
+        else 
+          pick_order.delete(firstpick)
         end
       end
     
