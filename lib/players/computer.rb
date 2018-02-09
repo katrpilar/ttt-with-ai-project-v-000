@@ -29,15 +29,15 @@ module Players
         return lastmatch
       end
       
-      while board.full? == false 
-        firstpick = pick_order.first
-        if board.valid_move?(firstpick)
-          pick_order.delete(firstpick)
-          return firstpick
-        else 
-          pick_order.delete(firstpick)
-        end
-      end
+      # while board.full? == false 
+      #   firstpick = pick_order.first
+      #   if board.valid_move?(firstpick)
+      #     pick_order.delete(firstpick)
+      #     return firstpick
+      #   else 
+      #     pick_order.delete(firstpick)
+      #   end
+      # end
     
 
     end
