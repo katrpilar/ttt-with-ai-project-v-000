@@ -15,7 +15,12 @@ module Players
       
       pick_order = ["5","1","3","7","9","2", "4", "6", "8"]
       
-      while board.full? == FALSE
+      while board.full? == false 
+        firstpick = pick_order.first
+        if board.valid_move?(firstpick)
+          return firstpick
+        end
+        firstpick.shift
       end
     if board.valid_move?("5")
       return "5"
