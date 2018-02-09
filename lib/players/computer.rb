@@ -18,7 +18,7 @@ module Players
       
       if board.valid_move?("5")
         return "5"
-      elsif board.valid_move?
+      elsif second.any?(board.valid_move?
       
       while board.full? == false 
         firstpick = pick_order.first
