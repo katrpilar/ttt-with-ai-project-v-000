@@ -20,7 +20,7 @@ module Players
         return "5"
       elsif second.detect{|i| board.valid_move?(i)} != nil
         
-        return second.detect{|i| board.valid_move?(i)}
+        return second.select{|i| board.valid_move?(i)}
       elsif
       
       while board.full? == false 
