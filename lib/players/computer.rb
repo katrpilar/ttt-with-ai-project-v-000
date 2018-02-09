@@ -22,10 +22,7 @@ module Players
         end
         firstpick.shift
       end
-    if board.valid_move?("5")
-      return "5"
-      
-    end
+    
 
     end
     
