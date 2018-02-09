@@ -1,9 +1,6 @@
 require 'pry'
 module Players
   class Computer < Player
-    #@counter = 0
-    # @pick_order = ["5","1","3","7","9","2", "4", "6", "8"]
-    @counter = 0
     def move(board)
       
       # valid_moves = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
@@ -14,7 +11,7 @@ module Players
       binding.pry
     #   @counter += 1
     #   @player_array = []
-    #   wins = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2] ]
+      wins = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [6,4,2] ]
       
       @pick_order = ["5","1","3","7","9","2", "4", "6", "8"]
       #binding.pry
