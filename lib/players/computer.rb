@@ -15,13 +15,19 @@ module Players
       
       pick_order = ["5","1","3","7","9","2", "4", "6", "8"]
       second = ["1","3","7","9"]
+      third = ["2", "4", "6", "8"]
       
       if board.valid_move?("5")
         return "5"
       elsif second.detect{|i| board.valid_move?(i)} != nil
-        
-        return second.select{|i| board.valid_move?(i)}
-      elsif
+        firstmatch = second.detect{|i| board.valid_move?(i)}
+        second.delete(firstmatch)
+        return firstmatch
+      elsif third.detect{|i| board.valid_move?(i)} != nil
+        lastmatch = third.detect{|i| board.valid_move?(i)}
+        third.delete(lastmatch)
+        return lastmatch
+      end
       
       while board.full? == false 
         firstpick = pick_order.first
